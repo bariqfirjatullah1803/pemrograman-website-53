@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Belajar HTML</title>
+</head>
+
+<body>
+    <!-- Membuat text paragraf -->
+    <div>
+        <p id="atas">Belajar HTML Di Karisma Academy<br>Belajar HTML Di Karisma Academy</p>
+        <p align="right">Belajar HTML Di Karisma Academy</p>
+        <p align="center">Belajar HTML Di Karisma Academy</p>
+    </div>
+
+    <!-- Digunakan untuk membuat judul -->
+    <div>
+        <h1>Judul sebuah artikel menggunakan tag H1</h1>
+        <h2>Judul sebuah artikel menggunakan tag H2</h2>
+        <h3>Judul sebuah artikel menggunakan tag H3</h3>
+        <h4>Judul sebuah artikel menggunakan tag H4</h4>
+        <h5>Judul sebuah artikel menggunakan tag H5</h5>
+        <h6>Judul sebuah artikel menggunakan tag H6</h6>
+    </div>
+
+    <!-- Beberapa tag untuk membuat tampilan dari teks -->
+    <div>
+        <b>Teks yang dicetak tebal</b>
+        <i>Teks yang dicetak miring</i>
+        <u>Teks yang bergaris bawah</u>
+        <strike>Teks yang diberi garis tengah</strike>
+        <strong>Teks dengan dicetak tebal</strong>
+        <em>Menunjukan teks penting</em>
+        <small>Teks dengan ukuran lebih kecil dari umumnya</small>
+        <mark>Teks yang ditandai</mark>
+        <del>Teks yang dihapus</del>
+        <ins>Teks yang bergaris bawah</ins>
+    </div>
+
+    <!-- TAG LIST -->
+    <div>
+        <h3>Susunan Acara</h3>
+        <ol type="1">
+            <li>Pembukaan</li>
+            <li>Pembacaan Doa</li>
+            <li>Sambutan - sambutan :
+                <ul type="square">
+                    <li>Sambutan Ketua Panitia</li>
+                    <li>Sambutan Kepala Sekolah</li>
+                </ul>
+            </li>
+            <li>Acara Inti</li>
+            <li>Penutup</li>
+        </ol>
+    </div>
+
+    <!-- TAG TABLE -->
+    <div>
+        <h3>Jadwal Ujian</h3>
+        <table border="1" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Hari</th>
+                    <th>Jam Ke 1</th>
+                    <th>Jam Ke 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Senin</td>
+                    <td align="center">Bahasa Inggris</td>
+                    <td align="center">Matematika</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td align="center">Bahasa Indonesia</td>
+                    <td align="center">Kejuruhan</td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th rowspan="2">Hari</th>
+                    <th colspan="2">Jam</th>
+                </tr>
+                <tr>
+                    <th>Pertama</th>
+                    <th>Kedua</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Senin</td>
+                    <td align="center">Bahasa Inggris</td>
+                    <td align="center">Matematika</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td align="center">Bahasa Indonesia</td>
+                    <td align="center">Kejuruhan</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TAG MEDIA -->
+    <div>
+        <!-- TAG IMAGE -->
+        <div>
+            <img src="https://placehold.co/900x400/000000/FFFFFF/png" alt="Gambar dari placehold"
+                title="Tampilan Gambar" width="400">
+            <img src="images/image-1.png" width="500" alt="Gambar dari placehold.co" title="Tampilan Gambar 2" />
+        </div>
+
+        <!-- TAG AUDIO & VIDEO -->
+        <div>
+            <video
+                src="https://file-examples.com/storage/fe0e9b723466913cf9611b7/2017/04/file_example_MP4_480_1_5MG.mp4"
+                width="300" controls autoplay></video>
+            <audio src="https://file-examples.com/storage/fe0e9b723466913cf9611b7/2017/11/file_example_MP3_700KB.mp3"
+                width="200" controls autoplay></audio><br>
+        </div>
+    </div>
+
+    <!-- TAG LINK -->
+    <div>
+        <a href="https://google.com" target="_blank">Google.com</a><br>
+        <a href="image.html">Halaman Gambar</a><br>
+        <a href="#atas">Pergi ke Atas</a>
+    </div>
+
+    <!-- TAG IFRAME -->
+    <div>
+        <h3>Menampilkan Halaman Image</h3>
+        <iframe src="image.html" width="100%" height="300"></iframe>
+    </div>
+
+    <!-- TAG FORMULIR -->
+    <div>
+        <h3>Formulir Pendaftaran</h3>
+        <form action="" method="get">
+            <div>
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+            </div>
+            <div>
+                <label for="jk">Jenis Kelamin</label>
+                <div>
+                    <input type="radio" id="jk" name="jk" value="pria">
+                    Pria
+                    <input type="radio" id="jk" name="jk" value="wanita">
+                    Wanita
+                </div>
+            </div>
+            <div>
+                <label for="sebagai">Daftar Sebagai</label>
+                <select id="sebagai" name="sebagai">
+                    <option value="pembeli">Pembeli</option>
+                    <option value="penjual">Penjual</option>
+                </select>
+            </div>
+            <div>
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat"></textarea>
+            </div>
+            <div>
+                <input type="submit" id="simpan" name="simpan" value="Simpan" />
+                <input type="reset" id="reset" name="reset" value="Reset" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
